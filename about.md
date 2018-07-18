@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+John R Hoopes is a student living in London. He is studying design and data analysis 
 
 ### More Information
 
