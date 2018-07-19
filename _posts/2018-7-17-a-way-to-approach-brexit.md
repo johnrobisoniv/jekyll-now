@@ -1,5 +1,4 @@
-## A possible way to approach Brexit
-for Prime Minister Theresa May + cabinet
+_for Prime Minister Theresa May + cabinet_
 
 I don't envy your position at the moment prime minister, but I believe you took on this challenge for a reason: you can be one of the most influential prime ministers in British - world - history. This is your opportunity and your burden. And from my perspective, it doesn't appear to be going very well ...
 
