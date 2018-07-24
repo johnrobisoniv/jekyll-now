@@ -4,24 +4,28 @@ title: About
 permalink: /about/
 ---
 
-John R Hoopes is a student living in London. He is studying design and data analysis of spatial systems.
+I am a data and digital product designer studying for a masters in Spatial Data Science and Visualisation at University College London. I am interested in how emerging technologies can improve issues of human dignity and planetary stewardship with a focus on the ethics of privacy and security, disrupting drivers of intentional human violence, and promoting conscious consumerism and the transition to a circular economy. Building on my professional experience in tech entrepreneurship and civil society, my work is oriented towards identifying and scaling innovative digital solutions with social and environmental impact.
 
-His research interests include:
-- Maritime security
-- Security & privacy
+Research interests:
+
+Human dignity
+- Drivers of intentional human violence
+- Maritime security and governance
+- Information security & privacy
+- Collective intelligence
 - Blockchain
 - AI
 - Corruption, drugs and organized crime
 - Surveillance
-- Belt and Road initiative
 - Supply chains
+
+Planetary stewardship
+- Climate trends
+- The ocean
+- Fisheries and fisheries conflict
 - Conscious consumerism
 - Circular economy
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[john.robison.iv@gmail.com](mailto:john.robison.iv@gmail.com)
