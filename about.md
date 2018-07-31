@@ -11,13 +11,18 @@ Research interests:
 Human dignity
 - Drivers of intentional human violence
 - Maritime security and governance
-- Information security & privacy
-- Collective intelligence
-- Blockchain
-- AI
+- Networked computing
+  - Information security, privacy and transparency
+  - Collective intelligence
+  - Blockchain
+  - AI
+  - IoT
 - Corruption, drugs and organized crime
 - Surveillance
 - Supply chains
+  - Illicit
+  - Weapons
+- Cities
 
 Planetary stewardship
 - Climate trends
