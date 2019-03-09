@@ -34,8 +34,8 @@ window.addEventListener('load', async () => {
   })(web3);
 
   navigator.geolocation.getCurrentPosition(function (position) {
-    lon = Math.floor(position.coords.longitude * 10**9);
-    lat = Math.floor(position.coords.latitude * 10**9);
+    lon = Math.floor(position.coords.longitude * 10**6);
+    lat = Math.floor(position.coords.latitude * 10**6);
     coords = [lon, lat];
   });
 
@@ -47,21 +47,33 @@ window.addEventListener('load', async () => {
     locationAwareOptions = {
       abi: jsonInterface.abi,
       data: jsonInterface.bytecode,
-      address: "0x42b8e0afff4461821a4c0f905e9b08f38c82a8a6"
     };
 
 
-    locationAware = new web3.eth.Contract(locationAwareOptions.abi, locationAwareOptions.address, locationAwareOptions);
-
-    console.log('YO')
-
-    let latestBlockNum;
-
-    web3.eth.getBlockNumber()
-      .then((blockNum) => {
-        latestBlockNum = blockNum;
-      });
+    locationAware = new web3.eth.Contract(locationAwareOptions.abi, null, locationAwareOptions);
 
   });
+
+  $('#deploy').on('click', function (e) {
+    e.preventDefault();
+    var formData = $("form").serializeArray();
+    console.log(formData);
+    var toAddress = formData[0].value;
+    var txValue = web3.utils.toWei(formData[1].value);
+    locationAware.options.address = formData[2].value;
+    coords = [2318328, 48896719];
+
+    locationAware.methods.sendWithLocationChecks(toAddress, coords, txValue)
+      .send({from: accounts[0]}, (error, transactionHash) => {
+        if (error) throw error;
+        console.log(transactionHash);
+
+        window.open('https://ropsten.etherscan.io/tx/' + transactionHash, "_blank");
+      })
+      .on('receipt', (receipt) => {
+        console.log(receipt);
+      });
+
+  })
 
 });
