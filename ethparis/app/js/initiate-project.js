@@ -61,7 +61,7 @@ window.addEventListener('load', async () => {
     var toAddress = formData[0].value;
     var txValue = web3.utils.toWei(formData[1].value);
     locationAware.options.address = formData[2].value;
-    coords = [2318328, 48896719];
+    // coords = [2318328, 48896719];
 
     locationAware.methods.sendWithLocationChecks(toAddress, coords, txValue)
       .send({from: accounts[0]}, (error, transactionHash) => {
